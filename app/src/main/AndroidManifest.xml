@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.okay.demo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".recyclerview.RecyclerViewActivity"/>
+        <activity
+            android:name=".recyclerview.DividerLineActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+        <activity android:name=".recyclerview.StickyActivity"/>
+
+        <activity android:name=".recyclerview.MultiTypeActivity"/>
+        <activity android:name=".recyclerview.HeaderAndFooterActivity"/>
+        <activity android:name=".recyclerview.RefreshLoadingActivity"/>
+        <activity android:name=".loading.LoadingActivity"/>
+        <activity android:name=".loading.BouquetLoadingActivity"/>
+
+        <activity android:name=".other.OtherActivity"/>
+
+        <activity android:name=".other.qqdrag.QQDragActivity" />
+        <activity android:name=".other.praise.PraiseActivity" />
+        <activity android:name="com.okay.demo.other.guidance.ParallaxActivity" />
+        <activity android:name=".other.headline.HeadlineActivity" />
+        <activity android:name=".recyclerview.DragRemoActivity" />
+        <activity android:name=".recyclerview.TreeActivity" />
+        <activity android:name=".other.wave.WaveActivity" />
+        <activity android:name=".other.palette.PaletteActivity" />
+        <activity android:name=".loading.HeadlineActivity" />
+    </application>
+
+</manifest>

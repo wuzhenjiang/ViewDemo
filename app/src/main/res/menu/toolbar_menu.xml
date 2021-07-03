@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+¬
+    <item
+        android:id="@+id/setting"
+        android:icon="@mipmap/ic_launcher"
+        android:title="LinearLayoutManager"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/setting1"
+        android:icon="@mipmap/ic_launcher"
+        android:title="GridLayoutManager"
+        app:showAsAction="withText" />
+
+<!--    <item-->
+<!--        android:id="@+id/setting2"-->
+<!--        android:icon="@mipmap/ic_launcher"-->
+<!--        android:title="StaggeredGridLayoutManager"-->
+<!--        app:showAsAction="collapseActionView" />-->
+</menu>
