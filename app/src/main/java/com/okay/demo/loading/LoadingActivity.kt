@@ -51,6 +51,10 @@ class LoadingActivity:AppCompatActivity() {
                     val intent = Intent(RecyclerViewActivity@ this, HeadlineActivity::class.java)
                     startActivity(intent)
                 }
+                2 -> {
+                    val intent = Intent(MainActivity@ this, MagicBeatAnimatorActivity::class.java)
+                    startActivity(intent)
+                }
                 else -> {
 
                 }

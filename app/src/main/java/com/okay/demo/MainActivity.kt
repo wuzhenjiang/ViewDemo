@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.okay.demo.loading.LoadingActivity
+import com.okay.demo.loading.MagicBeatAnimatorActivity
 import com.okay.demo.main.HomeAdapter
 import com.okay.demo.other.OtherActivity
 import com.okay.demo.recyclerview.RecyclerViewActivity

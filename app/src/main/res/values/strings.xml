@@ -19,6 +19,7 @@
     <string-array name="Loading">
         <item>花束加载效果</item>
         <item>今日头条加载效果</item>
+        <item>魔拍加载中</item>
     </string-array>
 
     <string-array name="Other">
@@ -28,6 +29,7 @@
         <item>新闻摘要引导页动画</item>
         <item>水波效果</item>
         <item>简易画板</item>
+        <item>流式布局</item>
     </string-array>
 
     <string name="action_settings">Settings</string>

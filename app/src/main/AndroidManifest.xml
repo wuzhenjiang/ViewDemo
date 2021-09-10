@@ -41,6 +41,8 @@
         <activity android:name=".other.wave.WaveActivity" />
         <activity android:name=".other.palette.PaletteActivity" />
         <activity android:name=".loading.HeadlineActivity" />
+        <activity android:name=".loading.MagicBeatAnimatorActivity" />
+        <activity android:name=".other.layout.FlowActivity" />
     </application>
 
 </manifest>
