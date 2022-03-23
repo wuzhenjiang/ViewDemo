@@ -9,9 +9,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.okay.demo.loading.LoadingActivity
 import com.okay.demo.loading.MagicBeatAnimatorActivity
 import com.okay.demo.main.HomeAdapter
+import com.okay.demo.other.LeakActivity
 import com.okay.demo.other.OtherActivity
 import com.okay.demo.recyclerview.RecyclerViewActivity
 import com.okay.demo.recyclerview.decoration.CommonItemDecoration
+import com.okay.demo.web.NotificationActivity
+import com.okay.demo.web.WebNativeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -46,6 +49,18 @@ class MainActivity : AppCompatActivity() {
                 }
                 2 -> {
                     val intent = Intent(MainActivity@ this, OtherActivity::class.java)
+                    startActivity(intent)
+                }
+                3 -> {
+                    val intent = Intent(MainActivity@ this, WebNativeActivity::class.java)
+                    startActivity(intent)
+                }
+                4 -> {
+                    val intent = Intent(MainActivity@ this, NotificationActivity::class.java)
+                    startActivity(intent)
+                }
+                5 -> {
+                    val intent = Intent(MainActivity@ this, LeakActivity::class.java)
                     startActivity(intent)
                 }
                 else -> {

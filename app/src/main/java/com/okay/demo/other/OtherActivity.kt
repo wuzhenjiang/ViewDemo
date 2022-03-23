@@ -9,6 +9,7 @@ import com.okay.demo.R
 import com.okay.demo.other.guidance.ParallaxActivity
 import com.okay.demo.main.HomeAdapter
 import com.okay.demo.other.headline.HeadlineActivity
+import com.okay.demo.other.layout.DialogActivity
 import com.okay.demo.other.layout.FlowActivity
 import com.okay.demo.other.palette.PaletteActivity
 import com.okay.demo.other.praise.PraiseActivity
@@ -72,6 +73,10 @@ class OtherActivity:AppCompatActivity() {
                 }
                 6 -> {
                     val intent = Intent(RecyclerViewActivity@ this, FlowActivity::class.java)
+                    startActivity(intent)
+                }
+                7 -> {
+                    val intent = Intent(RecyclerViewActivity@ this, DialogActivity::class.java)
                     startActivity(intent)
                 }
                 else -> {

@@ -2,8 +2,6 @@ package com.okay.demo
 
 import org.junit.Test
 
-import org.junit.Assert.*
-
 /**
  * Example local unit test, which will execute on the development machine (host).
  *
@@ -11,7 +9,25 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+     fun addition_isCorrect() {
+//        look{
+//            println("haha before")
+//            return
+//            println("haha end")
+//        }
+        runRunnable{
+            println("aaa")
+            return@runRunnable
+            println("bbb")
+        }
+    }
+
+   inline fun runRunnable(crossinline block:()->Unit){
+       println("ccc")
+        val runnable= Runnable {
+            block()
+        }
+       println("ddd")
+        runnable.run()
     }
 }

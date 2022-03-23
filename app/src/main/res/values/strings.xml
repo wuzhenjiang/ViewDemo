@@ -4,6 +4,9 @@
         <item>RecyclerView使用</item>
         <item>加载效果</item>
         <item>其它动画</item>
+        <item>Web与原生</item>
+        <item>通知</item>
+        <item>LeakCanary分析</item>
     </string-array>
 
     <string-array name="RecyclerView">
@@ -30,6 +33,7 @@
         <item>水波效果</item>
         <item>简易画板</item>
         <item>流式布局</item>
+        <item>Dialog</item>
     </string-array>
 
     <string name="action_settings">Settings</string>
