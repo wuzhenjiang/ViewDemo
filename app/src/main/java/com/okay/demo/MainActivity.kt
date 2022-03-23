@@ -11,6 +11,7 @@ import com.okay.demo.loading.MagicBeatAnimatorActivity
 import com.okay.demo.main.HomeAdapter
 import com.okay.demo.other.LeakActivity
 import com.okay.demo.other.OtherActivity
+import com.okay.demo.other.picture.PhotoActivity
 import com.okay.demo.recyclerview.RecyclerViewActivity
 import com.okay.demo.recyclerview.decoration.CommonItemDecoration
 import com.okay.demo.web.NotificationActivity
@@ -61,6 +62,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 5 -> {
                     val intent = Intent(MainActivity@ this, LeakActivity::class.java)
+                    startActivity(intent)
+                }
+                6 -> {
+                    val intent = Intent(MainActivity@ this, PhotoActivity::class.java)
                     startActivity(intent)
                 }
                 else -> {

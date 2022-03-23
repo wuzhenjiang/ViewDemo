@@ -7,6 +7,7 @@
         <item>Web与原生</item>
         <item>通知</item>
         <item>LeakCanary分析</item>
+        <item>拍照选图</item>
     </string-array>
 
     <string-array name="RecyclerView">

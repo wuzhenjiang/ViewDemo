@@ -27,6 +27,20 @@
             android:authorities="com.okay.test"
             android:enabled="true"
             android:exported="true"></provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                >
+
+            </meta-data>
+
+        </provider>
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -61,6 +75,7 @@
         <activity android:name=".web.WebNativeActivity" />
         <activity android:name=".web.NotificationActivity" />
         <activity android:name=".other.LeakActivity" />
+        <activity android:name=".other.picture.PhotoActivity" />
     </application>
 
 </manifest>
