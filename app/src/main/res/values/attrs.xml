@@ -6,4 +6,10 @@
     <!-- Y方向上的位移 -->
     <attr name="translationYIn" format="float" />
     <attr name="translationYOut" format="float" />
+
+    <!-- 按照比例显示的 FrameLayout -->
+    <declare-styleable name="RatioFrameLayout">
+        <!-- 宽高比例 -->
+        <attr name="sizeRatio" format="string" />
+    </declare-styleable>
 </resources>

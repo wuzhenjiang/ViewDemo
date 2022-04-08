@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.contentValuesOf
 import androidx.core.database.getStringOrNull
 import com.okay.testprovider.databinding.ActivityMainBinding
+import java.io.BufferedInputStream
+import java.net.HttpURLConnection
+import java.net.URL
 
 class MainActivity : AppCompatActivity() {
 

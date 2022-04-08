@@ -76,6 +76,7 @@
         <activity android:name=".web.NotificationActivity" />
         <activity android:name=".other.LeakActivity" />
         <activity android:name=".other.picture.PhotoActivity" />
+        <activity android:name=".other.picture.AlbumActivity" />
     </application>
 
 </manifest>

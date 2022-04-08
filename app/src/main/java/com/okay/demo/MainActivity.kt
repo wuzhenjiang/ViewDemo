@@ -2,12 +2,10 @@ package com.okay.demo
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.okay.demo.loading.LoadingActivity
-import com.okay.demo.loading.MagicBeatAnimatorActivity
 import com.okay.demo.main.HomeAdapter
 import com.okay.demo.other.LeakActivity
 import com.okay.demo.other.OtherActivity
@@ -40,38 +38,28 @@ class MainActivity : AppCompatActivity() {
         homeAdapter.setOnItemClickListener {
 
             when (it) {
-                0 -> {
-                    val intent = Intent(MainActivity@ this, RecyclerViewActivity::class.java)
-                    startActivity(intent)
-                }
-                1 -> {
-                    val intent = Intent(MainActivity@ this, LoadingActivity::class.java)
-                    startActivity(intent)
-                }
-                2 -> {
-                    val intent = Intent(MainActivity@ this, OtherActivity::class.java)
-                    startActivity(intent)
-                }
-                3 -> {
-                    val intent = Intent(MainActivity@ this, WebNativeActivity::class.java)
-                    startActivity(intent)
-                }
-                4 -> {
-                    val intent = Intent(MainActivity@ this, NotificationActivity::class.java)
-                    startActivity(intent)
-                }
-                5 -> {
-                    val intent = Intent(MainActivity@ this, LeakActivity::class.java)
-                    startActivity(intent)
-                }
-                6 -> {
-                    val intent = Intent(MainActivity@ this, PhotoActivity::class.java)
-                    startActivity(intent)
-                }
+                0 -> startActivityNoParams<RecyclerViewActivity>(this@MainActivity)
+                1 -> startActivity<LoadingActivity>()
+                2 -> startActivity<OtherActivity>()
+                3 -> startActivity<WebNativeActivity>()
+                4 -> startActivity<NotificationActivity>()
+                5 -> startActivity<LeakActivity>()
+                6 -> startActivity<PhotoActivity>()
                 else -> {
 
                 }
             }
         }
+    }
+
+    private inline fun <reified T>  startActivity(){
+        val intent = Intent(MainActivity@ this, T::class.java)
+        startActivity(intent)
+    }
+
+    private inline fun <reified T>  startActivityWithParams(block:Intent.()->Unit){
+        val intent = Intent(MainActivity@ this, T::class.java)
+        intent.block()
+        startActivity(intent)
     }
 }
